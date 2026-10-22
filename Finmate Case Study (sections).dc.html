@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-044ade68-626d-4eef-a710-7adaced8402d/styles.css">
+<script src="_ds/modernist-044ade68-626d-4eef-a710-7adaced8402d/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+html,body{margin:0;background:#07060a;color:#f3f2f2}
+a{color:inherit;text-decoration:none}
+a:hover{color:#9ff0d8}
+::selection{background:#1f8f74;color:#fff}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes letterIn{0%{transform:translateY(105%) skewY(8deg);opacity:0}100%{transform:none;opacity:1}}
+@keyframes drift1{0%{transform:translate(-8%,-6%) scale(1)}100%{transform:translate(12%,10%) scale(1.15)}}
+@keyframes drift2{0%{transform:translate(8%,8%) scale(1.1)}100%{transform:translate(-12%,-8%) scale(.9)}}
+@keyframes travel{0%{left:0%;opacity:0}8%{opacity:1}92%{opacity:1}100%{left:100%;opacity:0}}
+</style>
+</helmet>
+<div style="background:#07060a;color:#f3f2f2;font-family:var(--font-body);min-height:100vh;overflow-x:hidden">
+
+  <header style="position:fixed;top:0;left:0;right:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px clamp(20px,4vw,56px);background:rgba(7,6,10,.7);backdrop-filter:blur(14px);border-bottom:2px solid rgba(243,242,242,.12)">
+    <a href="Portfolio.dc.html#work" style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.08em">← Back to work</a>
+    <span style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:#a8a4b8">Case study <span style="color:#5ee6c0">02</span></span>
+    <a href="Portfolio.dc.html" style="font-weight:800;font-size:18px">Raashid Momin<span style="color:#5ee6c0">.</span></a>
+  </header>
+  <div style="position:fixed;top:62px;left:0;right:0;z-index:29;height:3px;background:rgba(243,242,242,.06)">
+    <div style="height:100%;width:{{ progress }};background:linear-gradient(90deg,#1f8f74,#5ee6c0);box-shadow:0 0 12px #5ee6c0"></div>
+  </div>
+
+  <section data-screen-label="01 Hero" style="position:relative;overflow:hidden;min-height:100vh;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));align-items:center;gap:clamp(40px,5vw,80px);padding:130px clamp(20px,4vw,56px) 72px;border-bottom:2px solid rgba(243,242,242,.14)">
+    {{ heroGlow }}
+    <div style="position:relative;display:flex;flex-direction:column;gap:36px">
+      <span style="display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#c9c6d6;animation:fadeUp 1s .2s both"><span style="width:10px;height:10px;background:#5ee6c0;box-shadow:0 0 12px #5ee6c0"></span>01 — Fintech case study</span>
+      {{ heroTitle }}
+      <p style="margin:0;max-width:520px;font-size:clamp(20px,2vw,28px);line-height:1.35;color:#d9d6e4;text-wrap:pretty;animation:fadeUp 1s 1s both">Making personal finance feel simpler.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));border-top:2px solid rgba(243,242,242,.2);animation:fadeUp 1s 1.2s both">
+        <div style="display:flex;flex-direction:column;gap:8px;padding:20px 20px 0 0"><span style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:#a8a4b8">Role</span><span style="font-size:16px;font-weight:600">UI/UX Designer</span></div>
+        <div style="display:flex;flex-direction:column;gap:8px;padding:20px 20px 0 0"><span style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:#a8a4b8">Platform</span><span style="font-size:16px;font-weight:600">Mobile App</span></div>
+        <div style="display:flex;flex-direction:column;gap:8px;padding:20px 0 0"><span style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:#a8a4b8">Focus</span><span style="font-size:16px;font-weight:600">UX Research, UI Design, Prototyping</span></div>
+      </div>
+    </div>
+    <div style="position:relative;display:flex;justify-content:center;align-items:center;gap:clamp(12px,2vw,28px);animation:fadeUp 1.2s .6s both">
+      <div style="flex:1 1 0;min-width:0;max-width:220px;margin-top:100px">
+        <div style="position:relative;aspect-ratio:9/19.5;padding:9px;border-radius:40px;background:linear-gradient(145deg,#4a4752 0%,#1c1b20 35%,#2c2a31 65%,#121116 100%);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.18),inset 0 0 0 4px #0b0a0d,0 50px 90px -30px rgba(0,0,0,.95),0 0 60px -12px rgba(94,230,192,.4)">
+          <div style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:32px;background:#0d1f1c"><img src="assets/finmate-expense.png" alt="Finmate expense view" style="display:block;width:100%;height:100%;object-fit:cover;object-position:top"><span style="position:absolute;top:2%;left:50%;transform:translateX(-50%);width:32%;aspect-ratio:3.3/1;border-radius:999px;background:#000;pointer-events:none"></span></div>
+        </div>
+      </div>
+      <div style="flex:1.2 1 0;min-width:0;max-width:280px">
+        <div style="position:relative;aspect-ratio:9/19.5;padding:10px;border-radius:46px;background:linear-gradient(145deg,#4a4752 0%,#1c1b20 35%,#2c2a31 65%,#121116 100%);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.18),inset 0 0 0 4px #0b0a0d,0 60px 120px -30px rgba(0,0,0,.95),0 0 90px -10px rgba(94,230,192,.55)">
+          <div style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:38px;background:#0d1f1c"><img src="assets/finmate-income.png" alt="Finmate income view" style="display:block;width:100%;height:100%;object-fit:cover;object-position:top"><span style="position:absolute;top:2%;left:50%;transform:translateX(-50%);width:32%;aspect-ratio:3.3/1;border-radius:999px;background:#000;pointer-events:none"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="02 Overview" style="padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);border-bottom:2px solid rgba(243,242,242,.14)">
+    <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;padding-bottom:28px;border-bottom:2px solid rgba(243,242,242,.2)">
+      <div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">02 — Overview</span><h2 style="margin:0;font-size:clamp(44px,6vw,96px);line-height:.9;letter-spacing:-.04em;font-weight:800">What is Finmate?</h2></div>
+      <p style="margin:0;max-width:440px;font-size:17px;line-height:1.5;color:#b9b5c8;text-wrap:pretty">A mobile app that helps people track income and expenses, save toward goals and learn about money — all in one calm place.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:2px;margin-top:40px;background:rgba(243,242,242,.12);border:2px solid rgba(243,242,242,.12)">
+      <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="3">
+        <div data-reveal="" data-delay="{{ p.delay }}" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1),background .4s;display:flex;flex-direction:column;gap:18px;min-height:240px;padding:28px;background:#0f0d16" style-hover="background:#122a26">
+          <span style="font-size:14px;font-weight:700;color:#5ee6c0">{{ p.num }}</span>
+          <h3 style="margin:0;font-size:clamp(36px,3.6vw,56px);line-height:.95;letter-spacing:-.04em;font-weight:800">{{ p.title }}</h3>
+          <p style="margin:0;font-size:16px;line-height:1.5;color:#b9b5c8;text-wrap:pretty">{{ p.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="03 The problem" style="padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);border-bottom:2px solid rgba(243,242,242,.14)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(32px,5vw,80px)">
+      <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:20px">
+        <span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">03 — The problem</span>
+        <h2 style="margin:0;font-size:clamp(44px,6vw,96px);line-height:.92;letter-spacing:-.04em;font-weight:800;text-wrap:balance">Money apps that make money feel harder.</h2>
+      </div>
+      <div data-reveal="" data-delay="150" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;justify-content:flex-end;gap:24px">
+        <p style="margin:0;font-size:clamp(18px,1.5vw,21px);line-height:1.55;color:#c9c6d6;text-wrap:pretty">Managing personal finances often means switching between dense dashboards, unfamiliar terms and numbers without context. Instead of feeling in control, people feel overwhelmed — and avoid looking at their money altogether.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));border-top:2px solid rgba(243,242,242,.2)">
+          <span style="padding:18px 16px 0 0;font-size:15px;font-weight:700">Too much complexity</span>
+          <span style="padding:18px 16px 0 0;font-size:15px;font-weight:700">Hard-to-read information</span>
+          <span style="padding:18px 0 0;font-size:15px;font-weight:700">No clear next step</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="04 The goal" style="position:relative;overflow:hidden;padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);background:radial-gradient(120% 100% at 20% 0%,#1e4a42 0%,#143430 40%,#07060a 100%);border-bottom:2px solid rgba(243,242,242,.14)">
+    <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:28px;max-width:1200px">
+      <span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">04 — The goal</span>
+      <p style="margin:0;font-size:clamp(36px,5.2vw,84px);line-height:1;letter-spacing:-.035em;font-weight:800;text-wrap:balance">Create a <span style="color:#5ee6c0">simple</span>, <span style="color:#5ee6c0">understandable</span> and <span style="color:#5ee6c0">visually organized</span> finance experience that helps users make better decisions.</p>
+    </div>
+  </section>
+
+  <section data-screen-label="05 Research" style="padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);border-bottom:2px solid rgba(243,242,242,.14)">
+    <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;padding-bottom:28px;border-bottom:2px solid rgba(243,242,242,.2)">
+      <div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">05 — Research</span><h2 style="margin:0;font-size:clamp(44px,6vw,96px);line-height:.9;letter-spacing:-.04em;font-weight:800">Discovery</h2></div>
+      <p style="margin:0;max-width:440px;font-size:17px;line-height:1.5;color:#b9b5c8;text-wrap:pretty">What I learned about how people manage — and avoid — their money.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:2px;margin-top:40px;background:rgba(243,242,242,.12);border:2px solid rgba(243,242,242,.12)">
+      <sc-for list="{{ research }}" as="r" hint-placeholder-count="3">
+        <div data-reveal="" data-delay="{{ r.delay }}" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1),background .4s;display:flex;flex-direction:column;gap:20px;min-height:280px;padding:28px;background:#0f0d16" style-hover="background:#122a26">
+          <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:14px;font-weight:700;color:#5ee6c0">{{ r.num }}</span><span style="width:10px;height:10px;background:#5ee6c0;box-shadow:0 0 12px #5ee6c0"></span></div>
+          <h3 style="margin:0;font-size:clamp(26px,2.4vw,34px);line-height:1;letter-spacing:-.03em;font-weight:800">{{ r.title }}</h3>
+          <p style="margin:0;font-size:16px;line-height:1.5;color:#b9b5c8;text-wrap:pretty">{{ r.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="06 Insights" style="padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);border-bottom:2px solid rgba(243,242,242,.14)">
+    <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;padding-bottom:28px;border-bottom:2px solid rgba(243,242,242,.2)">
+      <div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">06 — Insights / Pain points</span><h2 style="margin:0;font-size:clamp(44px,6vw,96px);line-height:.9;letter-spacing:-.04em;font-weight:800">What stood out</h2></div>
+      <p style="margin:0;max-width:440px;font-size:17px;line-height:1.5;color:#b9b5c8;text-wrap:pretty">The patterns from research that shaped what Finmate needed to fix.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;margin-top:24px">
+      <sc-for list="{{ insights }}" as="i" hint-placeholder-count="4">
+        <div data-reveal="" data-delay="{{ i.delay }}" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1),padding .4s;display:grid;grid-template-columns:minmax(60px,120px) minmax(0,1fr) minmax(0,1fr);gap:clamp(16px,3vw,48px);align-items:baseline;padding:32px 0;border-bottom:2px solid rgba(243,242,242,.12)" style-hover="padding-left:16px">
+          <span style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:{{ i.color }}">{{ i.kind }}</span>
+          <h3 style="margin:0;font-size:clamp(24px,2.8vw,44px);line-height:1;letter-spacing:-.03em;font-weight:800">{{ i.title }}</h3>
+          <p style="margin:0;font-size:17px;line-height:1.5;color:#b9b5c8;text-wrap:pretty">{{ i.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="07 User persona" style="padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);border-bottom:2px solid rgba(243,242,242,.14)">
+    <span data-reveal="" style="opacity:0;transform:translateY(30px);transition:opacity 1s,transform 1s;display:block;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0;margin-bottom:28px">07 — User persona</span>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:2px;background:rgba(243,242,242,.12);border:2px solid rgba(243,242,242,.12)">
+      <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:24px;padding:28px;background:radial-gradient(120% 90% at 30% 0%,#1e4a42 0%,#143430 45%,#0d1f1c 100%)">
+        <div class="grayscale" style="aspect-ratio:1;max-width:280px;border:2px solid rgba(243,242,242,.2)"><image-slot id="finmate-persona" shape="rect" placeholder="Rajesh — persona photo"></image-slot></div>
+        <h2 style="margin:0;font-size:clamp(56px,6vw,96px);line-height:.88;letter-spacing:-.05em;font-weight:800">Rajesh</h2>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#d9e8e3">Age · occupation · location — add from your persona</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:2px">
+        <sc-for list="{{ persona }}" as="p" hint-placeholder-count="4">
+          <div data-reveal="" data-delay="{{ p.delay }}" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:14px;padding:28px;background:#0f0d16">
+            <span style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">{{ p.title }}</span>
+            <p style="margin:0;font-size:16px;line-height:1.55;color:#b9b5c8;text-wrap:pretty">{{ p.text }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(20px,3vw,48px);align-items:start;margin-top:2px;padding:clamp(28px,4vw,56px);background:linear-gradient(100deg,#1f8f74,#5ee6c0);color:#07060a">
+      <span style="font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;padding-top:10px">Key insight</span>
+      <p style="margin:0;font-size:clamp(26px,3vw,48px);line-height:1.08;letter-spacing:-.025em;font-weight:800;text-wrap:pretty">“Add Rajesh's persona insight from your case study here.”</p>
+    </div>
+  </section>
+
+  <section data-screen-label="08 User journey / flow" style="padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);border-bottom:2px solid rgba(243,242,242,.14);overflow:hidden">
+    <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:16px;margin-bottom:64px">
+      <span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">08 — User journey / flow</span>
+      <h2 style="margin:0;font-size:clamp(44px,6vw,96px);line-height:.9;letter-spacing:-.04em;font-weight:800">The core journey</h2>
+    </div>
+    <div data-flow="" style="position:relative;overflow-x:auto;padding-bottom:16px">
+      <div style="position:relative;display:grid;grid-template-columns:repeat(6,minmax(180px,1fr));gap:24px;min-width:1160px">
+        <div style="position:absolute;left:0;right:0;top:27px;height:2px;background:rgba(243,242,242,.12)"></div>
+        <div data-reveal="" data-line="" style="position:absolute;left:0;right:0;top:27px;height:2px;background:linear-gradient(90deg,#1f8f74,#5ee6c0);box-shadow:0 0 14px #5ee6c0;transform:scaleX(0);transform-origin:left;transition:transform 2.4s cubic-bezier(.6,0,.2,1)"></div>
+        {{ flowPulse }}
+        <sc-for list="{{ flow }}" as="f" hint-placeholder-count="6">
+          <div data-reveal="" data-delay="{{ f.delay }}" style="position:relative;opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:20px">
+            <span style="display:flex;align-items:center;justify-content:center;width:56px;height:56px;background:#07060a;border:2px solid #5ee6c0;box-shadow:0 0 24px -4px #5ee6c0;font-size:16px;font-weight:800;color:#5ee6c0">{{ f.num }}</span>
+            <h3 style="margin:0;font-size:24px;line-height:1.05;letter-spacing:-.02em;font-weight:800">{{ f.title }}</h3>
+            <p style="margin:0;font-size:15px;line-height:1.5;color:#a8a4b8;text-wrap:pretty">{{ f.text }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="09 Information architecture" style="padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);border-bottom:2px solid rgba(243,242,242,.14)">
+    <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;padding-bottom:28px;border-bottom:2px solid rgba(243,242,242,.2)">
+      <div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">09 — Information architecture</span><h2 style="margin:0;font-size:clamp(44px,6vw,96px);line-height:.9;letter-spacing:-.04em;font-weight:800">How it is organised</h2></div>
+      <p style="margin:0;max-width:440px;font-size:17px;line-height:1.5;color:#b9b5c8;text-wrap:pretty">Three clear tabs keep every task one tap from home. Built from the final app structure.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:14px;margin-top:48px">
+      <div data-reveal="" style="opacity:0;transform:translateY(30px);transition:opacity .9s,transform .9s;display:flex;flex-direction:column;align-items:flex-start">
+        <div style="padding:18px 26px;border:2px solid #5ee6c0;box-shadow:0 0 30px -6px #5ee6c0;font-size:28px;font-weight:800;letter-spacing:-.03em">Finmate</div>
+        <span style="margin-left:24px;width:2px;height:14px;background:#5ee6c0"></span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(16px,2vw,28px);width:100%">
+        <div data-reveal="" data-delay="150" style="opacity:0;transform:translateY(30px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:12px;padding-top:28px;border-top:2px solid #5ee6c0;position:relative">
+          <span style="position:absolute;top:-14px;left:24px;width:2px;height:14px;background:#5ee6c0"></span>
+          <div style="display:flex;flex-direction:column;gap:6px;padding:16px 18px;background:linear-gradient(100deg,#1f8f74,#5ee6c0);color:#07060a;border:2px solid transparent"><span style="font-size:22px;font-weight:800;letter-spacing:-.02em">Money</span></div>
+          <div style="display:flex;flex-direction:column;gap:8px;padding-left:20px;border-left:2px solid rgba(94,230,192,.35)"><div style="display:flex;flex-direction:column;gap:6px;padding:16px 18px;background:#0f0d16;color:#f3f2f2;border:2px solid rgba(94,230,192,.35)"><span style="font-size:18px;font-weight:800;letter-spacing:-.02em">Income / Expense toggle</span><span style="font-size:13px;font-weight:600;color:#a8a4b8">Period total</span></div><div style="display:flex;flex-direction:column;gap:6px;padding:16px 18px;background:#0f0d16;color:#f3f2f2;border:2px solid rgba(94,230,192,.35)"><span style="font-size:18px;font-weight:800;letter-spacing:-.02em">Add Income</span></div><div style="display:flex;flex-direction:column;gap:6px;padding:16px 18px;background:#0f0d16;color:#f3f2f2;border:2px solid rgba(94,230,192,.35)"><span style="font-size:18px;font-weight:800;letter-spacing:-.02em">Add Expense</span></div><div style="display:flex;flex-direction:column;gap:6px;padding:16px 18px;background:#0f0d16;color:#f3f2f2;border:2px solid rgba(94,230,192,.35)"><span style="font-size:18px;font-weight:800;letter-spacing:-.02em">Daily · Monthly · Calendar · Notes</span><span style="font-size:13px;font-weight:600;color:#a8a4b8">Transaction views</span></div></div>
+        </div>
+        <div data-reveal="" data-delay="300" style="opacity:0;transform:translateY(30px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:12px;padding-top:28px;border-top:2px solid #5ee6c0;position:relative">
+          <span style="position:absolute;top:-14px;left:24px;width:2px;height:14px;background:#5ee6c0"></span>
+          <div style="display:flex;flex-direction:column;gap:6px;padding:16px 18px;background:linear-gradient(100deg,#1f8f74,#5ee6c0);color:#07060a;border:2px solid transparent"><span style="font-size:22px;font-weight:800;letter-spacing:-.02em">Goal</span></div>
+          <div style="display:flex;flex-direction:column;gap:8px;padding-left:20px;border-left:2px solid rgba(94,230,192,.35)"><div style="display:flex;flex-direction:column;gap:6px;padding:16px 18px;background:#0f0d16;color:#f3f2f2;border:2px solid rgba(94,230,192,.35)"><span style="font-size:18px;font-weight:800;letter-spacing:-.02em">Savings goals</span><span style="font-size:13px;font-weight:600;color:#a8a4b8">Add from your IA</span></div></div>
+        </div>
+        <div data-reveal="" data-delay="450" style="opacity:0;transform:translateY(30px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:12px;padding-top:28px;border-top:2px solid #5ee6c0;position:relative">
+          <span style="position:absolute;top:-14px;left:24px;width:2px;height:14px;background:#5ee6c0"></span>
+          <div style="display:flex;flex-direction:column;gap:6px;padding:16px 18px;background:linear-gradient(100deg,#1f8f74,#5ee6c0);color:#07060a;border:2px solid transparent"><span style="font-size:22px;font-weight:800;letter-spacing:-.02em">Learn</span></div>
+          <div style="display:flex;flex-direction:column;gap:8px;padding-left:20px;border-left:2px solid rgba(94,230,192,.35)"><div style="display:flex;flex-direction:column;gap:6px;padding:16px 18px;background:#0f0d16;color:#f3f2f2;border:2px solid rgba(94,230,192,.35)"><span style="font-size:18px;font-weight:800;letter-spacing:-.02em">Money basics</span><span style="font-size:13px;font-weight:600;color:#a8a4b8">Add from your IA</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="10 Wireframes" style="padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);border-bottom:2px solid rgba(243,242,242,.14)">
+    <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;padding-bottom:28px;border-bottom:2px solid rgba(243,242,242,.2)">
+      <div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">10 — Wireframes</span><h2 style="margin:0;font-size:clamp(44px,6vw,96px);line-height:.9;letter-spacing:-.04em;font-weight:800">Finding the structure</h2></div>
+      <p style="margin:0;max-width:460px;font-size:17px;line-height:1.5;color:#b9b5c8;text-wrap:pretty">Starting rough, I focused on hierarchy first — what users need to see at a glance — before any visual styling.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(20px,2.5vw,40px);margin-top:40px">
+      <sc-for list="{{ wireframes }}" as="w" hint-placeholder-count="3">
+        <div data-reveal="" data-delay="{{ w.delay }}" style="opacity:0;transform:translateY(50px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:16px">
+          <div style="aspect-ratio:4/5;border:2px solid rgba(243,242,242,.14);background:#0f0d16"><image-slot id="{{ w.slot }}" shape="rect" placeholder="{{ w.placeholder }}"></image-slot></div>
+          <div style="display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:baseline"><span style="font-size:14px;font-weight:700;color:#5ee6c0">{{ w.num }}</span><div style="display:flex;flex-direction:column;gap:6px"><h3 style="margin:0;font-size:22px;font-weight:800;letter-spacing:-.02em">{{ w.title }}</h3><p style="margin:0;font-size:15px;line-height:1.5;color:#a8a4b8;text-wrap:pretty">{{ w.text }}</p></div></div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="11 Design system" style="padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);border-bottom:2px solid rgba(243,242,242,.14)">
+    <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:16px;padding-bottom:28px;border-bottom:2px solid rgba(243,242,242,.2)">
+      <span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">11 — Design system</span>
+      <h2 style="margin:0;font-size:clamp(44px,6vw,96px);line-height:.9;letter-spacing:-.04em;font-weight:800">Design system</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:2px;margin-top:40px;background:rgba(243,242,242,.12);border:2px solid rgba(243,242,242,.12)">
+      <sc-for list="{{ designSystem }}" as="d" hint-placeholder-count="3">
+        <div data-reveal="" data-delay="{{ d.delay }}" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:18px;padding:28px;background:#0f0d16">
+          <div style="aspect-ratio:16/9;border:2px solid rgba(243,242,242,.12);background:#0d1f1c"><image-slot id="{{ d.slot }}" shape="rect" placeholder="{{ d.placeholder }}"></image-slot></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><h3 style="margin:0;font-size:26px;letter-spacing:-.025em;font-weight:800">{{ d.title }}</h3><span style="font-size:13px;font-weight:700;color:#5ee6c0">{{ d.num }}</span></div>
+          <p style="margin:0;font-size:15px;line-height:1.55;color:#a8a4b8;text-wrap:pretty">{{ d.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="12 High-fidelity screens" style="position:relative;overflow:hidden;padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);background:radial-gradient(90% 60% at 50% 30%,#143430 0%,#0b1614 50%,#07060a 100%);border-bottom:2px solid rgba(243,242,242,.14)">
+    <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:16px;margin-bottom:clamp(56px,7vw,110px)">
+      <span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">12 — High-fidelity screens</span>
+      <h2 style="margin:0;font-size:clamp(56px,10vw,170px);line-height:.85;letter-spacing:-.05em;font-weight:800">The screens</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:clamp(24px,3vw,48px);align-items:start">
+      <sc-for list="{{ screens }}" as="s" hint-placeholder-count="6">
+        <div data-parallax="{{ s.speed }}" style="display:flex;flex-direction:column;gap:18px">
+          <div data-reveal="" data-delay="{{ s.delay }}" style="opacity:0;transform:translateY(60px);transition:opacity 1.1s,transform 1.1s cubic-bezier(.2,.7,.2,1)">
+            <div style="position:relative;aspect-ratio:9/19.5;padding:10px;border-radius:44px;background:linear-gradient(145deg,#4a4752 0%,#1c1b20 35%,#2c2a31 65%,#121116 100%);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.18),inset 0 0 0 4px #0b0a0d,0 50px 90px -30px rgba(0,0,0,.95),0 0 40px -14px rgba(94,230,192,.35);transition:transform .6s cubic-bezier(.2,.7,.2,1),box-shadow .6s" style-hover="transform:translateY(-14px) scale(1.03);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.22),inset 0 0 0 4px #0b0a0d,0 70px 110px -30px rgba(0,0,0,.95),0 0 90px -6px rgba(94,230,192,.6)">
+              <div style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:36px;background:#0d1f1c"><image-slot id="{{ s.slot }}" shape="rect" placeholder="{{ s.title }}"></image-slot><span style="position:absolute;top:2%;left:50%;transform:translateX(-50%);width:32%;aspect-ratio:3.3/1;border-radius:999px;background:#000;pointer-events:none"></span></div>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:baseline"><span style="font-size:13px;font-weight:700;color:#5ee6c0">{{ s.num }}</span><span style="font-size:16px;font-weight:700">{{ s.title }}</span></div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="13 Key design decisions" style="padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);border-bottom:2px solid rgba(243,242,242,.14)">
+    <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:16px;padding-bottom:28px;border-bottom:2px solid rgba(243,242,242,.2)">
+      <span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">13 — Key design decisions</span>
+      <h2 style="margin:0;font-size:clamp(44px,6vw,96px);line-height:.9;letter-spacing:-.04em;font-weight:800">Why it works this way</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:2px;margin-top:40px;background:rgba(243,242,242,.12);border:2px solid rgba(243,242,242,.12)">
+      <sc-for list="{{ decisions }}" as="d" hint-placeholder-count="4">
+        <div data-reveal="" data-delay="{{ d.delay }}" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:18px;padding:28px;background:#0f0d16">
+          <div style="aspect-ratio:16/9;border:2px solid rgba(243,242,242,.12);background:#0d1f1c"><image-slot id="{{ d.slot }}" shape="rect" placeholder="{{ d.placeholder }}"></image-slot></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><h3 style="margin:0;font-size:26px;letter-spacing:-.025em;font-weight:800">{{ d.title }}</h3><span style="font-size:13px;font-weight:700;color:#5ee6c0">{{ d.num }}</span></div>
+          <p style="margin:0;font-size:15px;line-height:1.55;color:#a8a4b8;text-wrap:pretty">{{ d.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="14 Prototype" style="padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);border-bottom:2px solid rgba(243,242,242,.14)">
+    <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;padding-bottom:28px;border-bottom:2px solid rgba(243,242,242,.2)">
+      <div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">14 — Prototype</span><h2 style="margin:0;font-size:clamp(44px,6vw,96px);line-height:.9;letter-spacing:-.04em;font-weight:800">Prototype</h2></div>
+      <p style="margin:0;max-width:440px;font-size:17px;line-height:1.5;color:#b9b5c8;text-wrap:pretty">Clickable prototypes let me walk through each flow and refine screens version by version.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:2px;margin-top:40px;background:rgba(243,242,242,.12);border:2px solid rgba(243,242,242,.12)">
+      <sc-for list="{{ iterations }}" as="it" hint-placeholder-count="2">
+        <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:2px">
+          <div style="display:flex;flex-direction:column;gap:14px;padding:28px;background:#0f0d16"><span style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#a8a4b8">Before · {{ it.title }}</span><div style="aspect-ratio:9/12;border:2px solid rgba(243,242,242,.12)"><image-slot id="{{ it.before }}" shape="rect" placeholder="Earlier version"></image-slot></div></div>
+          <div style="display:flex;flex-direction:column;gap:14px;padding:28px;background:#0f0d16"><span style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">After · {{ it.title }}</span><div style="aspect-ratio:9/12;border:2px solid rgba(94,230,192,.35);box-shadow:0 0 40px -14px #5ee6c0"><image-slot id="{{ it.after }}" shape="rect" placeholder="Refined version"></image-slot></div></div>
+          <div style="display:flex;flex-direction:column;justify-content:flex-end;gap:12px;padding:28px;background:#0f0d16"><span style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">What changed</span><p style="margin:0;font-size:17px;line-height:1.5;color:#c9c6d6;text-wrap:pretty">{{ it.text }}</p></div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="15 Final solution" style="padding:clamp(80px,10vw,150px) clamp(20px,4vw,56px);border-bottom:2px solid rgba(243,242,242,.14)">
+    <div data-reveal="" style="opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:16px;padding-bottom:28px;border-bottom:2px solid rgba(243,242,242,.2)">
+      <span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">15 — Final solution</span>
+      <h2 style="margin:0;font-size:clamp(44px,6vw,96px);line-height:.9;letter-spacing:-.04em;font-weight:800">Final solution</h2>
+    </div>
+    <div style="display:flex;flex-direction:column">
+      <sc-for list="{{ solutions }}" as="s" hint-placeholder-count="3">
+        <div data-reveal="" style="opacity:0;transform:translateY(50px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(28px,4vw,64px);align-items:center;padding:clamp(40px,5vw,72px) 0;border-bottom:2px solid rgba(243,242,242,.12)">
+          <div style="display:flex;flex-direction:column;gap:24px">
+            <span style="font-size:clamp(64px,8vw,128px);line-height:.8;font-weight:800;letter-spacing:-.05em;background:linear-gradient(100deg,#1f8f74,#5ee6c0);-webkit-background-clip:text;background-clip:text;color:transparent">{{ s.num }}</span>
+            <div style="display:flex;flex-direction:column;gap:8px;padding:18px 0;border-top:2px solid rgba(243,242,242,.14)"><span style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#a8a4b8">Problem</span><p style="margin:0;font-size:18px;line-height:1.45;color:#c9c6d6">{{ s.problem }}</p></div>
+            <div style="display:flex;flex-direction:column;gap:8px;padding-top:18px;border-top:2px solid rgba(243,242,242,.14)"><span style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#5ee6c0">Solution</span><h3 style="margin:0;font-size:clamp(26px,2.6vw,38px);line-height:1.05;letter-spacing:-.03em;font-weight:800">{{ s.title }}</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#a8a4b8;text-wrap:pretty">{{ s.text }}</p></div>
+          </div>
+          <div style="aspect-ratio:4/3;border:2px solid rgba(243,242,242,.14);background:radial-gradient(120% 90% at 30% 0%,#1e4a42 0%,#143430 45%,#0d1f1c 100%)"><image-slot id="{{ s.slot }}" shape="rect" placeholder="{{ s.placeholder }}"></image-slot></div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <footer data-screen-label="16 CTA" style="position:relative;overflow:hidden;padding:clamp(100px,12vw,180px) clamp(20px,4vw,56px) 40px">
+    {{ footerGlow }}
+    <div style="position:relative;display:flex;flex-direction:column;gap:48px">
+      <span data-reveal="" style="opacity:0;transform:translateY(30px);transition:opacity 1s,transform 1s;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:#a8a4b8">What's next</span>
+      <h2 data-reveal="" data-delay="100" style="opacity:0;transform:translateY(60px);transition:opacity 1.2s,transform 1.2s cubic-bezier(.2,.7,.2,1);margin:0;font-size:clamp(64px,12vw,220px);line-height:.84;letter-spacing:-.055em;font-weight:800">LET'S BUILD<br><span style="background:linear-gradient(100deg,#f3f2f2 20%,#5ee6c0 70%,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent">SOMETHING GREAT.</span></h2>
+      <div data-reveal="" data-delay="250" style="opacity:0;transform:translateY(30px);transition:opacity 1s,transform 1s;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;padding-top:32px;border-top:2px solid rgba(243,242,242,.2)">
+        <a href="Portfolio.dc.html#contact" style="display:flex;align-items:center;justify-content:space-between;gap:56px;min-width:280px;padding:22px 26px;background:linear-gradient(100deg,#1f8f74,#5ee6c0);color:#07060a;font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:.08em;box-shadow:0 0 40px rgba(94,230,192,.5),0 0 100px rgba(94,230,192,.2);transition:transform .3s,filter .3s" style-hover="transform:translateY(-3px);filter:brightness(1.1);color:#07060a"><span>Let's talk</span><span style="font-size:22px">→</span></a>
+        <div style="display:flex;flex-wrap:wrap;gap:24px;font-size:15px;font-weight:600">
+          <a href="Artsphere Case Study.dc.html">← ArtSphere</a>
+          <a href="Portfolio.dc.html#work">All work</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { progress: 0 };
+  componentDidMount() {
+    this.io = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      el.style.opacity = '1'; el.style.transform = 'none';
+      this.io.unobserve(el);
+    }), { threshold: 0.12 });
+    const watch = () => document.querySelectorAll('[data-reveal]').forEach(el => {
+      if (el.dataset.watched) return; el.dataset.watched = '1';
+      el.style.transitionDelay = (el.dataset.delay || 0) + 'ms';
+      this.io.observe(el);
+    });
+    watch(); this.t = setTimeout(watch, 400);
+    this.onScroll = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const p = max > 0 ? window.scrollY / max : 0;
+      if (Math.abs(p - this.state.progress) > 0.002) this.setState({ progress: p });
+      const vh = window.innerHeight;
+      document.querySelectorAll('[data-parallax]').forEach(el => {
+        const r = el.getBoundingClientRect(), mid = r.top + r.height / 2 - vh / 2;
+        el.style.transform = `translateY(${(mid * +el.dataset.parallax).toFixed(1)}px)`;
+      });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    this.onScroll();
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this.onScroll); this.io && this.io.disconnect(); clearTimeout(this.t); }
+  glow(kind) {
+    const h = React.createElement;
+    const b = (bg, size, pos, anim) => h('div', { style: { position: 'absolute', width: size, height: size, ...pos, background: bg, filter: 'blur(90px)', opacity: .6, animation: anim, mixBlendMode: 'screen' } });
+    return h('div', { key: kind, style: { position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden' } },
+      b('radial-gradient(circle,#1f8f74 0%,transparent 65%)', '65vw', kind === 'hero' ? { left: '-15vw', top: '-20vw' } : { left: '-20vw', bottom: '-40vw' }, 'drift1 24s ease-in-out infinite alternate'),
+      b('radial-gradient(circle,#22d3ee 0%,transparent 65%)', '50vw', kind === 'hero' ? { right: '-10vw', top: '15vh' } : { right: '-20vw', bottom: '-35vw' }, 'drift2 28s ease-in-out infinite alternate'),
+      h('div', { style: { position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(7,6,10,.1), rgba(7,6,10,.7))' } }));
+  }
+  heroTitle() {
+    const h = React.createElement;
+    return h('h1', { key: 't', style: { margin: 0, fontWeight: 800, fontSize: 'clamp(56px,8.4vw,170px)', lineHeight: .84, letterSpacing: '-.055em', overflow: 'hidden', paddingBottom: '.06em', whiteSpace: 'nowrap' } },
+      [...'Finmate'].map((ch, i) => h('span', { key: i, style: { display: 'inline-block', animation: `letterIn 1s cubic-bezier(.2,.8,.2,1) ${300 + i * 60}ms both`, ...(i >= 3 ? { background: 'linear-gradient(100deg,#9ff0d8,#5ee6c0,#22d3ee)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' } : {}) } }, ch)));
+  }
+  renderVals() {
+    const n = i => String(i + 1).padStart(2, '0');
+    const fill = 'Add from your research.';
+    return {
+      progress: (this.state.progress * 100).toFixed(1) + '%',
+      heroGlow: this.glow('hero'), footerGlow: this.glow('footer'), heroTitle: this.heroTitle(),
+      flowPulse: React.createElement('span', { key: 'p', style: { position: 'absolute', top: 22, width: 12, height: 12, marginLeft: -6, background: '#9ff0d8', boxShadow: '0 0 18px 4px #5ee6c0', animation: 'travel 4.5s cubic-bezier(.6,0,.4,1) 2.6s infinite', opacity: 0 } }),
+      research: ['User needs', 'Existing behavior', 'Key observations'].map((t, i) => ({ num: n(i), title: t, text: fill, delay: i * 90 })),
+      pillars: [['Money', 'Track income and expenses with daily, monthly and calendar views.'], ['Goal', 'Save toward personal targets.'], ['Learn', 'Build everyday financial know-how.']].map(([t, x], i) => ({ num: n(i), title: t, text: x, delay: i * 100 })),
+      insights: [['Pain point', 'Add a pain point'], ['Pain point', 'Add a pain point'], ['Insight', 'Add a key insight'], ['Opportunity', 'Add a design opportunity']].map(([k, t], i) => ({ kind: k, title: t, text: fill, color: k === 'Pain point' ? '#ff8a6b' : '#5ee6c0', delay: i * 90 })),
+      persona: ['Goals', 'Frustrations', 'Behaviors', 'Needs'].map((t, i) => ({ title: t, text: `Add Rajesh's ${t.toLowerCase()} from your persona.`, delay: i * 90 })),
+      flow: [
+        ['Open app', 'Land on a calm overview.'], ['See balance', 'Understand where money stands.'], ['Review spending', 'Spot where money went.'],
+        ['Set a budget', 'Decide limits per category.'], ['Track progress', 'Watch goals move forward.'], ['Decide', 'Act with confidence.']
+      ].map(([t, x], i) => ({ num: n(i), title: t, text: x, delay: 300 + i * 220 })),
+      wireframes: [['Sketches', 'Paper explorations of layout and hierarchy.'], ['Low fidelity', 'Grey boxes to test structure and flow.'], ['Mid fidelity', 'Real content, refined spacing and order.']]
+        .map(([t, x], i) => ({ num: n(i), title: t, text: x, slot: 'finmate-wire-' + (i + 1), placeholder: t + ' wireframe', delay: i * 120 })),
+      designSystem: ['Typography', 'Color system', 'Components'].map((t, i) => ({ num: n(i), title: t, text: `Describe the ${t.toLowerCase()} decision and why.`, slot: 'finmate-dir-' + (i + 1), placeholder: t, delay: (i % 3) * 100 })),
+      decisions: ['Cards', 'Navigation', 'Data presentation', 'Interaction patterns'].map((t, i) => ({ num: n(i), title: t, text: `Describe the ${t.toLowerCase()} decision and why.`, slot: 'finmate-dir-' + (i + 4), placeholder: t, delay: (i % 3) * 100 })),
+      screens: ['Home dashboard', 'Spending insights', 'Budget goals', 'Transactions', 'Add expense', 'Profile'].map((t, i) => ({ num: n(i), title: t, slot: 'finmate-ui-' + (i + 1), speed: [-0.05, -0.12, -0.03][i % 3], delay: (i % 3) * 120 })),
+      solutions: [
+        ['Too much complexity', 'One clear overview', 'Explain how the home screen brings the essentials into one view.'],
+        ['Hard-to-read information', 'Readable data', 'Explain how numbers, charts and labels were made easier to understand.'],
+        ['No clear next step', 'Guided decisions', 'Explain how the interface helps users know what to do next.']
+      ].map(([p, t, x], i) => ({ num: n(i), problem: p, title: t, text: x, slot: 'finmate-sol-' + (i + 1), placeholder: t + ' — screen' })),
+      iterations: [['Home', 'Describe what you changed between versions and why.'], ['Budget', 'Describe what you changed between versions and why.']]
+        .map(([t, x], i) => ({ title: t, text: x, before: 'finmate-it-b' + (i + 1), after: 'finmate-it-a' + (i + 1) })),
+      learnings: [
+        ['Clarity over features', 'Add your learning.'], ['Data needs context', 'Add your learning.'],
+        ['Test early', 'Add your learning.'], ['Design for trust', 'Add your learning.']
+      ].map(([t, x], i) => ({ num: n(i), title: t, text: x, delay: i * 90 }))
+    };
+  }
+}
+</script>
+</body>
+</html>
